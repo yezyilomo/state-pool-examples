@@ -2,7 +2,7 @@
   "name": "state-pool-examples",
   "version": "0.1.0",
   "private": true,
-  "https://yezyilomo.github.io",
+  "homepage": "https://yezyilomo.github.io",
   "dependencies": {
     "immer": "^6.0.3",
     "react": "^16.11.0",
