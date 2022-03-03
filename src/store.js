@@ -2,7 +2,7 @@ import { createStore } from 'state-pool';
 
 const store = createStore();
 
-/*
+
 // ===================================================
 // Use this if you want to allow store persistance in local storage
 let timerId = null
@@ -31,9 +31,7 @@ store.persist({
             // is called every time the store state changes. However, it should not
             // be called too often because it triggers the expensive `JSON.stringify` operation.
             clearTimeout(timerId);
-            timerId = setTimeout(() => {
-
-            }, DEBOUNCE_TIME);
+            timerId = setTimeout(doStateSaving, DEBOUNCE_TIME);
         }
     },
     loadState: function (key) {
@@ -57,7 +55,6 @@ store.persist({
     }
 })
 // ===================================================
-*/
 
 
 export default store;

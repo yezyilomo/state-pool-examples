@@ -22,3 +22,16 @@ button {
   border-radius: 8px;
   border: solid 1px #dddddd;
 }
+
+.description {
+  margin: 80px auto;
+  padding: 30px 100px;
+  color: gray;
+  border-top: solid 1px #dddddd;
+  width: 50%;
+}
+
+.description a {
+  position: relative;
+  top: 20px !important;
+}

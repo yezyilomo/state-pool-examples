@@ -3,7 +3,7 @@ import store from '../store';
 
 
 function Example3(props) {
-    const [color, setColor] = store.useState("favColor", { default: "black" })
+    const [color, setColor] = store.useState("favColor", { default: "Black" })
 
     const updateColor = (e) => {
         setColor(e.target.value);
@@ -19,6 +19,15 @@ function Example3(props) {
             My favourite color is {color} <br /><br /><br />
             <input type="text" value={color} onChange={updateColor} placeholder="Enter your fav color" />
             <button onClick={reset}>Reset</button>
+
+
+            <div class="description">
+                In this example we initialize a global state dynamically
+                by using a "default" configuration<br/>
+                <a href="https://github.com/yezyilomo/state-pool-examples/blob/main/src/components/Example3.js">
+                    View code
+                </a>
+            </div>
         </div>
     );
 }
