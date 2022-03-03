@@ -9,7 +9,7 @@ function Example6(props) {
 
     return (
         <div>
-            <br /><h3>Example 1</h3><br />
+            <br /><h3>Example 6</h3><br />
             Count {count}  <br /><br /><br />
 
 
