@@ -15,8 +15,8 @@ function Example5(props) {
     return (
         <div>
             <br /><h3>Example 5</h3><br />
-            My height is {height ? `${height} m` : '___'} <br /><br /><br />
-            <label><b>Height</b></label>
+            My height is {height ? `${height} m` : '___'} <br /><br />
+            <label>Height</label>
             <input type="text" value={height} onChange={updateHeight} placeholder="Enter your height" />
 
 

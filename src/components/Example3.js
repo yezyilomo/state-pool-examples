@@ -16,7 +16,8 @@ function Example3(props) {
     return (
         <div>
             <br /><h3>Example 3</h3><br />
-            My favourite color is {color} <br /><br /><br />
+            My favourite color is {color} <br /><br />
+            <label>Fav Color</label>
             <input type="text" value={color} onChange={updateColor} placeholder="Enter your fav color" />
             <button onClick={reset}>Reset</button>
 

@@ -14,8 +14,8 @@ function Example1(props) {
     return (
         <div>
             <br /><h3>Example 1</h3><br />
-            My name is {name? name: "___"}  <br /><br /><br />
-            <label><b>Name</b></label>
+            My name is {name? name: "___"}  <br /><br />
+            <label>Name</label>
             <input type="text" value={name} onChange={updateName} placeholder="Enter your name" />
 
 
