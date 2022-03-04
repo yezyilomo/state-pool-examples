@@ -5,6 +5,7 @@ import {
     HashRouter as Router, Switch, Route, Link
 } from 'react-router-dom';
 
+import Welcome from './components/Welcome';
 import Example1 from './components/Example1'
 import Example2 from './components/Example2';
 import Example3 from './components/Example3';
@@ -16,7 +17,7 @@ import Example6 from './components/Example6';
 function Application(props) {
     return (
         <Router base="/">
-            <br/> <br/> <br/> <br/>
+            <br/> <br/>
             <Link to="/example1">Example1</Link> &nbsp; &nbsp;
             <Link to="/example2">Example2</Link> &nbsp; &nbsp;
             <Link to="/example3">Example3</Link> &nbsp; &nbsp;
@@ -24,6 +25,7 @@ function Application(props) {
             <Link to="/example5">Example5</Link> &nbsp; &nbsp;
             <Link to="/example6">Example6</Link>
             <Switch>
+                <Route exact path="/" component={Welcome} />
                 <Route exact path="/example1" component={Example1} />
                 <Route exact path="/example2" component={Example2} />
                 <Route exact path="/example3" component={Example3} />

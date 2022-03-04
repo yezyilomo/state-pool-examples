@@ -14,8 +14,8 @@ function Example4(props) {
     return (
         <div>
             <br /><h3>Example 4</h3><br />
-            My birth year is {birthYear? birthYear: "___"}  <br /><br /><br />
-            <label><b>Birth Year</b></label>
+            My birth year is {birthYear? birthYear: "___"}  <br /><br />
+            <label>Birth Year</label>
             <input type="text" value={birthYear} onChange={updateBirthYear} placeholder="Enter your birth year" />
 
 

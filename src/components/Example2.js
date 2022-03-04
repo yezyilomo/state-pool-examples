@@ -20,12 +20,13 @@ function Example2(props) {
         <div>
             <br /><h3>Example 2</h3><br />
             My name is {name? name: "___"}  <br /><br />
-            My height is {user.height ? `${user.height} m` : '___'},
-            and my weight is : {user.weight ? `${user.weight} kg` : '___'}  <br /><br /><br />
+            My height is {user.height ? `${user.height} m` : '___'} ,
+            and my weight is {user.weight ? `${user.weight} kg` : '___'}  <br /><br />
 
-            <label><b>Height</b></label>
+            <label>Height</label>
             <input type="text" value={user.height} onChange={updateHeight} placeholder="Enter your height" /> <br />
-            <label><b>Weight</b></label>
+            <br />
+            <label>Weight</label>
             <input type="text" value={user.weight} onChange={updateWeight} placeholder="Enter your weight" />
 
 
