@@ -25,7 +25,7 @@ function Example6(props) {
 
 // Update global state from outside a component
 setInterval(() => {
-    store.getState("count").updateValue(
+    store.getState("count").setValue(
         count => count + 1
     )
 }, 1000);
